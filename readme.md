@@ -1,5 +1,5 @@
 # Clone - Firebase Blog
-practicing HTML & CSS by developing with the Firebase Blog page.
+Learning HTML & CSS by developing the Firebase Blog page.
 Here is the official page: https://firebase.blog/
 
 # Mockup
