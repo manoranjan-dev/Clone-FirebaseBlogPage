@@ -1,2 +1,69 @@
 /* font family */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Mono:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*
+
+.work-sans-<uniquifier> {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.noto-sans-mono-<uniquifier> {
+  font-family: "Noto Sans Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.noto-sans-display-<uniquifier> {
+  font-family: "Noto Sans Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.jetbrains-mono-<uniquifier> {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+*{
+    padding: none;
+    margin: none;
+}
+body{
+    background-color: #ffffff;
+    padding: 22px 34px;
+}
+
+/* nav-bar style starts */
+.nav-bar, .nav-logo, .nav-menu, .menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-bar{
+    color: #041e49;
+}
+.nav-bar .nav-logo{
+    font-family: "Noto Sans Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+.nav-bar .nav-logo a{
+    text-decoration: none;
+    color: #041e49;
+}
+.nav-bar .nav-menu .menu{
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    list-style: none;
+}
+/* nav-bar style ends */
