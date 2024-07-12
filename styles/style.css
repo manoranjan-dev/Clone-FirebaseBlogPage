@@ -42,6 +42,18 @@ body{
     color: #041e49;
     font-family: "Noto Sans Display", sans-serif;
     margin: 18px 40px;
+    overflow-x: hidden;
+}
+.button{
+    padding: 5px 32px;
+    color: #041e49;
+    border: 1px solid #041e49;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.button:hover{
+    background-color: #041e49;
+    color: white;
 }
 
 /* nav-bar style starts */
@@ -106,3 +118,91 @@ body{
     } 
 }
 /* nav-bar style ends */
+
+/* hero section style starts */
+.hero{
+    position: relative;
+}
+.bg-text{
+    color: #808080b4;
+    font-family: "", sans-serif;
+    font-size: 380px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 14vh;
+    z-index: -3;
+}
+.bg-shape{
+    background-color: #7cacf8cc;
+    width: 100vw;
+    height: 95vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0 0 60px 0;
+    z-index: -2;
+}
+.hero h1{
+    font-family: "Noto Sans Mono", monospace;
+    max-width: 65vw;
+    font-size: 3rem;
+}
+.hero h1:hover{
+    text-decoration: underline;
+}
+.hero p{
+    font-weight: 600px;
+}
+
+.profile-card{
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 55vw;
+}
+.profile-pic img{
+    width: 120px;
+    border-radius: 20px 0 20px 0;
+}
+.profile{
+    display: flex;
+}
+.profile-details{
+    margin: 0 12px;
+}
+.name{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+.designation, .date{
+    font-size: 16px;
+    margin: 0;
+}
+.date{
+    position: absolute;
+    bottom: 12px;
+    font-family: "Noto Sans Mono", monospace;
+}
+.tags{
+    text-align: right;
+}
+.tags .button{
+    display: inline-block;
+    margin: 3px 0;
+}
+
+@media (max-width: 767px){
+
+    .hero h1{
+        max-width: 90vw;
+        font-size: 40px;
+    }
+    .profile-card{
+        max-width: 80vw;
+    } 
+}
+/* hero section style ends */
