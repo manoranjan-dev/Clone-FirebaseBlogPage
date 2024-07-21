@@ -33,55 +33,68 @@
 }
 */
 
-*{
+* {
     padding: none;
     margin: none;
 }
-body{
+
+body {
     background-color: #ffffff;
     color: #041e49;
     font-family: "Noto Sans Display", sans-serif;
     margin: 18px 40px;
     overflow-x: hidden;
 }
-.button{
-    padding: 5px 32px;
+
+.button {
+    font-family: "Noto Sans Mono", monospace;
+    padding: 6px 32px;
     color: #041e49;
-    border: 1px solid #041e49;
-    border-radius: 4px;
+    border: 2px solid #5e6368dc;
+    border-radius: 8px;
     text-decoration: none;
 }
-.button:hover{
+
+.button:hover {
     background-color: #041e49;
     color: white;
     text-decoration: underline;
 }
 
 /* nav-bar style starts */
-.nav-bar{
+.nav-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.nav-bar a, .nav-bar li{
+
+.nav-bar a,
+.nav-bar li {
     text-decoration: none;
     color: #041e49;
     list-style: none;
     font-weight: 500;
 }
-.nav-logo-menu, .nav-menu, .menu{
+
+.nav-logo-menu,
+.nav-menu,
+.menu {
     display: flex;
     align-items: center;
     padding: 0;
 }
-.menu li{
+
+.menu li {
     padding: 3px;
     margin: 0 12px;
 }
-.menu li:hover, .console-switch a:hover{
+
+.menu li:hover,
+.console-switch a:hover {
     text-decoration: underline;
 }
-.nav-logo{
+
+.nav-logo {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,43 +102,51 @@ body{
     font-weight: 500;
     margin: 4px 12px 4px 0;
 }
-.nav-logo svg{
+
+.nav-logo svg {
     width: 40px;
 }
-.nav-switch{
+
+.nav-switch {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.separator{
+
+.separator {
     background-color: #9c9c9c;
     width: 1px;
     height: 26px;
 }
-.nav-switch a svg{
+
+.nav-switch a svg {
     color: #041e49;
     width: 28px;
     margin: 3px;
 }
-.nav-switch a svg:hover{
+
+.nav-switch a svg:hover {
     width: 22px;
     transition: all ease-in 6ms;
 }
 
-@media (max-width: 767px){
+@media (max-width: 767px) {
 
-    .nav-menu, .console-switch{
+    .nav-menu,
+    .console-switch {
         display: none;
-    } 
+    }
 }
+
 /* nav-bar style ends */
 
 /* hero section style starts */
-.hero{
+.hero {
     position: relative;
-    padding: 1.5rem 0 0 0;
+    /* padding: 1.5rem 0 0 0; */
 }
-.bg-text{
+
+.bg-text {
     color: #808080b4;
     font-family: "Work Sans", sans-serif;
     font-size: 380px;
@@ -136,7 +157,8 @@ body{
     top: 14vh;
     z-index: -3;
 }
-.bg-shape{
+
+.bg-shape {
     background-color: #7cacf8cc;
     width: 100vw;
     height: 95vh;
@@ -147,73 +169,148 @@ body{
     border-radius: 0 0 60px 0;
     z-index: -2;
 }
-.hero h1{
+
+.hero h1 {
     font-family: "Noto Sans Mono", monospace;
-    max-width: 65vw;
     font-size: 3rem;
 }
-.hero h1:hover{
+
+.hero h1:hover {
     text-decoration: underline;
 }
-.hero p{
+
+.hero p {
     font-weight: 600px;
 }
-.page-name{
+
+.page-name {
     font-size: 20px;
     font-weight: 500;
 }
-.profile-card{
-    padding: 0 40px;
-    display: flex;
-    justify-content: space-between;
-    max-width: 55vw;
-}
-.profile-pic img{
-    width: 120px;
-    border-radius: 20px 0 20px 0;
-}
-.profile{
-    display: flex;
-}
-.profile-details{
-    margin: 0 12px;
-}
-.name{
-    font-size: 20px;
-    font-weight: 500;
-    margin: 0;
-}
-.designation, .date{
-    font-size: 16px;
-    margin: 0;
-}
-.date{
-    position: absolute;
-    bottom: 12px;
-    font-family: "Noto Sans Mono", monospace;
-}
-.tags{
-    text-align: right;
-}
-.tags .button{
-    display: inline-block;
-    margin: 3px 0;
+
+.container,
+section {
+    margin: 30px 0;
+    max-width: 70vw;
+
+    h2 {
+        font-family: "Noto Sans Display", sans-serif;
+        font-weight: 600;
+        padding: 0 0 0 30px;
+        margin: 0;
+    }
+
+    .profile-card {
+        padding: 0 0 0 30px;
+        margin: 20px 0;
+        display: flex;
+        justify-content: space-between;
+
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .profile {
+                display: flex;
+                margin: 15px 0;
+
+                .profile-pic {
+                    overflow: hidden;
+                    border-radius: 20px 0 20px 0;
+                    width: 140px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        filter: grayscale(100%);
+                    }
+                }
+
+                .profile-details {
+                    margin: 0 12px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .name {
+                        font-size: 20px;
+                        font-weight: 500;
+                        margin: 0;
+                    }
+
+                    .designation,
+                    .date {
+                        font-family: "Noto Sans Mono", monospace;
+                        font-size: 16px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .tags {
+            text-align: right;
+
+            .button {
+                display: inline-block;
+                margin: 3px 0;
+            }
+        }
+    }
 }
 
-@media (max-width: 767px){
+section:hover {
+    border-top: 3px solid #041e49;
+    border-bottom: 3px solid #041e49;
+    transition: all ease-in-out 0.2s;
 
-    .hero h1{
+    .profile-card .profile-container .profile .profile-pic img {
+        filter: grayscale(0%);
+        transform: scale(1.1);
+        transition: all ease-in-out 0.4ms;
+    }
+
+    .button {
+        border: 2px solid #041e49;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .container,
+    section {
         max-width: 90vw;
+    }
+
+    .hero h1 {
         font-size: 40px;
     }
-    .profile-card{
-        max-width: 80vw;
-    } 
-    .name, .page-name{
-        font-size: 18px;
-    }
-    .designation, .date{
-        font-size: 14px;
+
+    .profile-card {
+        flex-direction: column;
+        align-items: start;
+
+        .profile-container {
+            flex-direction: column;
+
+            .name,
+            .page-name {
+                font-size: 18px;
+            }
+
+            .designation,
+            .date {
+                font-size: 14px;
+            }
+
+        }
+
+        .tags {
+            text-align: left;
+            margin: 30px 0;
+        }
     }
 }
+
 /* hero section style ends */
